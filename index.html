@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div id="left">
+        <h1 class="title">Stay updated!</h1>
+        <p class="description">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <li>
+            <svg
+              class="check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 64 64"
+            >
+              <defs>
+                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FF6A3A" />
+                  <stop offset="100%" stop-color="#FF527B" />
+                </linearGradient>
+              </defs>
+              <g fill="none">
+                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="4"
+                  d="m18.286 34.686 8.334 7.98 19.094-18.285"
+                />
+              </g></svg
+            >Product discovery and building what matters
+          </li>
+          <li>
+            <svg
+              class="check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 64 64"
+            >
+              <defs>
+                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FF6A3A" />
+                  <stop offset="100%" stop-color="#FF527B" />
+                </linearGradient>
+              </defs>
+              <g fill="none">
+                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="4"
+                  d="m18.286 34.686 8.334 7.98 19.094-18.285"
+                />
+              </g></svg
+            >Measuring to ensure updates are a success
+          </li>
+          <li>
+            <svg
+              class="check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 64 64"
+            >
+              <defs>
+                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FF6A3A" />
+                  <stop offset="100%" stop-color="#FF527B" />
+                </linearGradient>
+              </defs>
+              <g fill="none">
+                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="4"
+                  d="m18.286 34.686 8.334 7.98 19.094-18.285"
+                />
+              </g></svg
+            >And much more!
+          </li>
+        </ul>
+
+        <form>
+          <label for="email">Email address</label>
+          <span id="error" class="hidden">Valid email required</span>
+          <input
+            id="email"
+            type="email"
+            placeholder="email@company.com"
+            required
+          />
+          <button type="button" onclick="subscribe()">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <div id="right">
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+
+      <div id="success">
+        <svg class="check" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <defs>
+            <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+              <stop offset="0%" stop-color="#FF6A3A"></stop>
+              <stop offset="100%" stop-color="#FF527B"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <circle cx="32" cy="32" r="32" fill="url(#a)"></circle>
+            <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"></path>
+          </g></svg>
+        <h1 class="title">Thanks for subscribing!</h1>
+        <p class="success-p">A confirmation letter has been sent to <strong><span id="successEmail"></span></strong>. Please open it and click the button inside to confirm your subscription.</p>
+        <button type="button">Dismiss message</button>
+      </div>
+  </body>
+  <script src="index.js"></script>
+</html>

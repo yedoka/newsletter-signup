@@ -18,7 +18,7 @@ function subscribe() {
       container.style.height = "100%";
       container.style.justifyContent = "center";
     } else {
-      container.style.width = "25%";
+      container.style.width = "100%";
     }
   } else {
     error.classList.remove("hidden");
